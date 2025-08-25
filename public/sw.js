@@ -9,7 +9,7 @@ function isValidUrl(url) {
 }
 
 function convertToAbsoluteUrl(url) {
-    const baseUrl = "https://www.devblogger.in";
+    const baseUrl = "https://www.ScamAlert.in";
     url = url.trim();
 
     if (/^(?:[a-zA-Z][a-zA-Z\d+\-.]*):/.test(url)) {
@@ -58,12 +58,12 @@ self.addEventListener('notificationclick', event => {
     event.notification.close();
     console.log('Notification clicked:', event.notification.data);
 
-    let url = event.notification.data?.url || 'https://www.devblogger.in/';
+    let url = event.notification.data?.url || 'https://www.ScamAlert.in/';
 
     if (!isValidUrl(url)) {
         url = convertToAbsoluteUrl(url);
     }
-    
+
     // if url contains like "/blog" then parse it to canonical url.
     if (!url.startsWith('http')) {
         url = `${self.location.origin}${url}`;

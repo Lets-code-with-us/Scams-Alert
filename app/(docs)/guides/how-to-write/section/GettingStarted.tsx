@@ -10,22 +10,22 @@ const GettingStarted = ({ isDarkMode }: { isDarkMode: boolean }) => {
             <section id="getting-started" className="mb-16">
                 <SectionHeader
                     title="Getting Started"
-                    subtitle="Your first steps to becoming a DevBlogger author"
+                    subtitle="Your first steps to becoming a ScamAlert author"
                 />
 
                 <div className="mb-8">
                     <img
                         src="/ss/createpageinterface.jpg"
-                        alt="DevBlogger Create Page Interface"
+                        alt="ScamAlert Create Page Interface"
                         className="w-full rounded-lg shadow-lg mb-4"
                     />
                     <p className="text-sm text-center text-gray-500 dark:text-gray-400">
-                        The DevBlogger create page interface
+                        The ScamAlert create page interface
                     </p>
                 </div>
 
                 <p className="text-lg mb-4">
-                    Starting your blogging journey on DevBlogger is simple. Navigate to <Link href="/create" className="text-blue-600 dark:text-blue-400 hover:underline">devblogger.in/create</Link> and follow these steps:
+                    Starting your blogging journey on ScamAlert is simple. Navigate to <Link href="/create" className="text-blue-600 dark:text-blue-400 hover:underline">ScamAlert.in/create</Link> and follow these steps:
                 </p>
 
                 <ol className="list-decimal list-inside space-y-4 mb-8">
@@ -47,7 +47,7 @@ const GettingStarted = ({ isDarkMode }: { isDarkMode: boolean }) => {
                         <Lightbulb size={20} className="mr-2" /> Pro Tip
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
-                        Before you start writing, browse through popular posts on DevBlogger to get a feel for the type of content that resonates with the community. Pay attention to structure, tone, and level of technical detail.
+                        Before you start writing, browse through popular posts on ScamAlert to get a feel for the type of content that resonates with the community. Pay attention to structure, tone, and level of technical detail.
                     </p>
                 </div>
             </section>

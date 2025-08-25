@@ -1,6 +1,6 @@
 # Summer Internships 2025: A Complete Guide for Science, Tech, and Engineering Students in India
 
-![Summer Internship 2025](http://devblogger.in/content/summer-internship.png)
+![Summer Internship 2025](http://ScamAlert.in/content/summer-internship.png)
 
 
 ## Why Summer Internships Matter

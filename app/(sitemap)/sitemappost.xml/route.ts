@@ -3,7 +3,7 @@ import { connectDB } from "@/utils/db";
 import Blog from "@/models/blogs.models";
 import { BlogPostType } from "@/types/blogs-types";
 
-const BASE_URL = "https://www.devblogger.in";
+const BASE_URL = "https://www.ScamAlert.in";
 
 export async function GET() {
     try {

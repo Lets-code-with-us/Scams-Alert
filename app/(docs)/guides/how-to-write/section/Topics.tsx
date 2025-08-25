@@ -107,7 +107,7 @@ const Topics = ({ isDarkMode }: { isDarkMode: boolean }) => {
                     <div className="w-px bg-gray-200 dark:bg-gray-700 hidden md:block"></div>
 
                     <div className="flex-1">
-                        <h4 className="text-xl font-semibold mb-4">Trending Topics on DevBlogger</h4>
+                        <h4 className="text-xl font-semibold mb-4">Trending Topics on ScamAlert</h4>
                         <p className="mb-4">
                             Consider writing about these currently popular topics in the developer community:
                         </p>

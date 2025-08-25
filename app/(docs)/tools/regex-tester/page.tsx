@@ -3,7 +3,7 @@ import RegexTester from './Component'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Dev Blogger Regex Tester - Test, Debug and Validate Regular Expressions Online',
+    title: 'Scam Alert Regex Tester - Test, Debug and Validate Regular Expressions Online',
     alternates: {
         canonical: '/tools/regex-tester',
     },

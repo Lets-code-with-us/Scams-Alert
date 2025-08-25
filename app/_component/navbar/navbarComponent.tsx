@@ -87,7 +87,7 @@ export const Navbar = () => {
               <CodeXml size={24} className="text-white" />
             </div>
             <span className="text-xl font-bold text-gray-900 dark:text-white ">
-              DevBlogger
+              ScamAlert
             </span>
           </Link>
 

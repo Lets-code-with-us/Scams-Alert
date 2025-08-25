@@ -183,7 +183,7 @@ export async function generateMetadata({ searchParams }: {
     const tag = searchParams.tag ? ` with tag ${searchParams.tag}` : '';
 
     return {
-        title: `Search: ${query}${category}${tag} - ${type} | DevBlogger`,
+        title: `Search: ${query}${category}${tag} - ${type} | ScamAlert`,
         description: `Search results for ${query} in ${type}${category}${tag}. Filter by category, tags, date and more.`,
         openGraph: {
             title: `Search: ${query}${category}${tag} - ${type}`,

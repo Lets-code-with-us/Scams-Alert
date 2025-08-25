@@ -371,8 +371,8 @@ const InterviewQuestions = () => {
                     <button
                       key={category.id}
                       className={`px-3 py-1.5 text-sm rounded-full whitespace-nowrap transition-colors ${activeFilter === category.id
-                          ? 'bg-indigo-100 text-indigo-700 font-medium'
-                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                        ? 'bg-indigo-100 text-indigo-700 font-medium'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                         }`}
                       onClick={() => setActiveFilter(category.id)}
                     >
@@ -393,8 +393,8 @@ const InterviewQuestions = () => {
                     <button
                       key={difficulty.id}
                       className={`px-3 py-1.5 text-sm rounded-full whitespace-nowrap transition-colors ${difficultyFilter === difficulty.id
-                          ? 'bg-indigo-100 text-indigo-700 font-medium'
-                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                        ? 'bg-indigo-100 text-indigo-700 font-medium'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                         }`}
                       onClick={() => setDifficultyFilter(difficulty.id)}
                     >
@@ -587,7 +587,7 @@ const InterviewQuestions = () => {
         <footer className="mt-16 pt-8 border-t border-gray-200 text-gray-600 text-sm">
           <div className="flex flex-col md:flex-row md:justify-between items-center">
             <div className="mb-4 md:mb-0">
-              © {new Date().getFullYear()} DevBlogger.in • All rights reserved
+              © {new Date().getFullYear()} ScamAlert.in • All rights reserved
             </div>
             <div className="flex gap-6">
               <a href="#" className="hover:text-indigo-600">About</a>

@@ -245,7 +245,7 @@ const ThumbnailSection = ({
                                 <p className="text-sm text-muted-foreground">
                                     Photo by{" "}
                                     <a
-                                        href={`https://unsplash.com/@${selectedImage.user.username}?utm_source=DevBlogger&utm_medium=referral`}
+                                        href={`https://unsplash.com/@${selectedImage.user.username}?utm_source=ScamAlert&utm_medium=referral`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="font-medium hover:underline"
@@ -254,7 +254,7 @@ const ThumbnailSection = ({
                                     </a > {" "}
                                     on{" "}
                                     <a
-                                        href="https://unsplash.com/?utm_source=DevBlogger&utm_medium=referral"
+                                        href="https://unsplash.com/?utm_source=ScamAlert&utm_medium=referral"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="font-medium hover:underline"

@@ -361,7 +361,7 @@ const ColorPicker = () => {
       </div>
 
       <div className="mt-8 text-center text-gray-600">
-        <p><a href="https://devblogger.in/tools" className="underline hover:text-blue-500">More Tools</a></p>
+        <p><a href="https://ScamAlert.in/tools" className="underline hover:text-blue-500">More Tools</a></p>
       </div>
     </div>
   );

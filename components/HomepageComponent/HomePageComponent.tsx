@@ -462,14 +462,14 @@ const HomePage = ({ posts, users, techNewsPosts, totalLikes, totalViews, totalBl
                 </Suspense>
             )}
 
-            {/* Why DevBlogger - Priority 1 */}
+            {/* Why ScamAlert - Priority 1 */}
             <section className={cn(
                 "py-16",
                 isDarkMode ? "bg-gray-900" : "bg-white"
             )}>
                 <div className="container mx-auto px-4 sm:px-6">
                     <div className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
-                        <h2 className="text-3xl font-bold">Why DevBlogger?</h2>
+                        <h2 className="text-3xl font-bold">Why ScamAlert?</h2>
                         <Link href="/services">
                             <Button
                                 variant="default"
@@ -492,7 +492,7 @@ const HomePage = ({ posts, users, techNewsPosts, totalLikes, totalViews, totalBl
                         <FeatureCard
                             icon={<Book size={48} className={cn("text-green-500", isDarkMode && "text-green-400")} />}
                             title="Get Discovered By Employers"
-                            description="Our SEO-optimized platform helps your content rank higher. Developers on DevBlogger are 3x more likely to be found by hiring managers."
+                            description="Our SEO-optimized platform helps your content rank higher. Developers on ScamAlert are 3x more likely to be found by hiring managers."
                             action="Start Getting Noticed"
                             link="/blogs"
                             isDarkMode={isDarkMode}

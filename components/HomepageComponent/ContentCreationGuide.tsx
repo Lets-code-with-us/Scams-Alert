@@ -19,7 +19,7 @@ const ContentCreationGuide = () => {
             tips: [
                 "Consider what unique perspective you can bring",
                 "Use tools like Google Trends to verify interest",
-                "Check what's popular on DevBlogger"
+                "Check what's popular on ScamAlert"
             ]
         },
         {

@@ -3,7 +3,7 @@ import SQLFormatter from './Component'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Dev Blogger SQL Formatter - Format and Beautify SQL Queries Online',
+  title: 'Scam Alert SQL Formatter - Format and Beautify SQL Queries Online',
   alternates: {
     canonical: '/tools/sql-formatter',
   },

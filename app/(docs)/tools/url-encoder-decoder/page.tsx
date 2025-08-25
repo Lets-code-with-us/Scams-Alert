@@ -4,7 +4,7 @@ import URLEncoderDecoder from './Component'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Dev Blogger URL Encoder Decoder - Encode and Decode URLs Online',
+  title: 'Scam Alert URL Encoder Decoder - Encode and Decode URLs Online',
   alternates: {
     canonical: '/tools/url-encoder-decoder',
   },

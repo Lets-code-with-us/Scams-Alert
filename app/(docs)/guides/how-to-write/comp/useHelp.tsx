@@ -38,7 +38,7 @@ const TableOfContents = () => {
     };
 
     const tocItems = [
-        { id: 'why-write', title: 'Why Write on DevBlogger?', icon: <Lightbulb size={16} /> },
+        { id: 'why-write', title: 'Why Write on ScamAlert?', icon: <Lightbulb size={16} /> },
         { id: 'getting-started', title: 'Getting Started', icon: <FileText size={16} /> },
         { id: 'audience', title: 'Understanding Your Audience', icon: <Users size={16} /> },
         { id: 'topics', title: 'Choosing the Right Topic', icon: <Zap size={16} /> },

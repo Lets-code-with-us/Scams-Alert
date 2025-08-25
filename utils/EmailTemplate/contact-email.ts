@@ -15,11 +15,11 @@ function confirmationToUser(userName: string, userEmail: string, submissionDate:
 <body>
     <div class="container">
         <div class="header">
-            <h1>DevBlogger Contact Confirmation</h1>
+            <h1>ScamAlert Contact Confirmation</h1>
         </div>
         <div class="content">
             <p>Hi ${userName},</p>
-            <p>Thank you for reaching out to DevBlogger! We've received your message and will review it promptly.</p>
+            <p>Thank you for reaching out to ScamAlert! We've received your message and will review it promptly.</p>
             
             <h3>Submission Details:</h3>
             <ul>
@@ -31,10 +31,10 @@ function confirmationToUser(userName: string, userEmail: string, submissionDate:
             <p>Our team will respond to your inquiry within 1-2 business days.</p>
             
             <hr>
-            <p>Best regards,<br>DevBlogger Support Team</p>
+            <p>Best regards,<br>ScamAlert Support Team</p>
         </div>
         <div class="footer">
-            © 2024 DevBlogger. All rights reserved.
+            © 2024 ScamAlert. All rights reserved.
         </div>
     </div>
 </body>
@@ -60,7 +60,7 @@ const copyToAdmin = (userName: string, userEmail: string, submissionDate: string
 <body>
     <div class="container">
         <div class="header">
-            <h1>New DevBlogger Contact Form Submission</h1>
+            <h1>New ScamAlert Contact Form Submission</h1>
         </div>
         <div class="content">
             <h2>Contact Details</h2>
@@ -98,7 +98,7 @@ const copyToAdmin = (userName: string, userEmail: string, submissionDate: string
             </div>
         </div>
         <div class="footer">
-            © 2025 DevBlogger Contact Management System
+            © 2025 ScamAlert Contact Management System
         </div>
     </div>
 </body>

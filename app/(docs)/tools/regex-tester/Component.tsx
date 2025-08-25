@@ -259,7 +259,7 @@ const RegexTester: React.FC = () => {
         <>
             <div className="container mx-auto px-4 py-8 max-w-6xl">
                 <div className="text-center mb-8">
-                    <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100">DevBlogger Regex Tester</h1>
+                    <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100">ScamAlert Regex Tester</h1>
                     <p className="text-gray-600 dark:text-gray-400 mt-2">
                         Test and debug your regular expressions in real-time
                     </p>
@@ -603,7 +603,7 @@ const RegexTester: React.FC = () => {
                 </div>
 
                 <div className="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
-                    <p>Made with ❤️ for developers by <a href="https://devblogger.in" className="text-blue-500 hover:underline">DevBlogger</a></p>
+                    <p>Made with ❤️ for developers by <a href="https://ScamAlert.in" className="text-blue-500 hover:underline">ScamAlert</a></p>
                 </div>
             </div>
         </>

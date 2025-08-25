@@ -167,7 +167,7 @@ The off-campus job market offers numerous opportunities for freshers across indu
 
 ---
 
-*Visit [DevBlogger](https://devblogger.in) for more resources to help you in your job search journey.*
+*Visit [ScamAlert](https://ScamAlert.in) for more resources to help you in your job search journey.*
 
 *Keywords: off-campus jobs, fresher jobs 2025, entry-level positions, TCS NQT, Infosys off-campus, IT jobs for freshers, banking careers, engineering jobs, fresh graduate opportunities, job preparation tips*
 

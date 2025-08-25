@@ -10,7 +10,7 @@ const CreateWriteAndCode = ({ isDarkMode }: { isDarkMode: boolean }) => {
             <section id="creating-post" className="mb-16">
                 <SectionHeader
                     title="Creating Your Blog Post"
-                    subtitle="A step-by-step guide to the DevBlogger writing process"
+                    subtitle="A step-by-step guide to the ScamAlert writing process"
                 />
 
                 <div className="mb-12">
@@ -19,20 +19,20 @@ const CreateWriteAndCode = ({ isDarkMode }: { isDarkMode: boolean }) => {
                     <div className="mb-6">
                         <img
                             src="/ss/titlecreationinterface.jpg"
-                            alt="DevBlogger Title Creation Interface"
+                            alt="ScamAlert Title Creation Interface"
                             className="w-full rounded-lg shadow-lg mb-4"
                         />
                         <p className="text-sm text-center text-gray-500 dark:text-gray-400">
-                            DevBlogger's title input with AI suggestion feature
+                            ScamAlert's title input with AI suggestion feature
                         </p>
                     </div>
 
                     <p className="text-lg mb-4">
-                        Your title is the first impression readers will have of your content. DevBlogger allows titles up to 250 characters, but concise titles (60-100 characters) typically perform better for readability and SEO.
+                        Your title is the first impression readers will have of your content. ScamAlert allows titles up to 250 characters, but concise titles (60-100 characters) typically perform better for readability and SEO.
                     </p>
 
                     <p className="text-lg mb-6">
-                        If you're struggling to create an effective title, use DevBlogger's AI-powered title generator, which can suggest SEO-friendly options based on your content.
+                        If you're struggling to create an effective title, use ScamAlert's AI-powered title generator, which can suggest SEO-friendly options based on your content.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -54,7 +54,7 @@ const CreateWriteAndCode = ({ isDarkMode }: { isDarkMode: boolean }) => {
                     <h3 className="text-2xl font-semibold mb-6">Content Creation</h3>
 
                     <p className="text-lg mb-4">
-                        DevBlogger supports three writing modes: Markdown, Rich Editor, and HTML. Choose the one that best fits your workflow.
+                        ScamAlert supports three writing modes: Markdown, Rich Editor, and HTML. Choose the one that best fits your workflow.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -92,28 +92,28 @@ const CreateWriteAndCode = ({ isDarkMode }: { isDarkMode: boolean }) => {
                     </p>
                     <CodeBlock
                         language="javascript"
-                        code={`console.log('Hello, DevBlogger!');`}
+                        code={`console.log('Hello, ScamAlert!');`}
                     />
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                         Example of a JavaScript code block
                     </p>
                     <CodeBlock
                         language="python"
-                        code={`print('Hello, DevBlogger!')`}
+                        code={`print('Hello, ScamAlert!')`}
                     />
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                         Example of a Python code block
                     </p>
                     <CodeBlock
                         language="java"
-                        code={`System.out.println("Hello, DevBlogger!");`}
+                        code={`System.out.println("Hello, ScamAlert!");`}
                     />
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                         Example of a Java code block
                     </p>
                     <CodeBlock
                         language="csharp"
-                        code={`Console.WriteLine("Hello, DevBlogger!");`}
+                        code={`Console.WriteLine("Hello, ScamAlert!");`}
                     />
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                         Example of a C# code block
@@ -163,19 +163,19 @@ const CreateWriteAndCode = ({ isDarkMode }: { isDarkMode: boolean }) => {
                 />
 
                 <p className="text-lg mb-6">
-                    Code snippets are essential for technical blogs. DevBlogger allows you to add code blocks easily in all writing modes.
+                    Code snippets are essential for technical blogs. ScamAlert allows you to add code blocks easily in all writing modes.
                 </p>
 
                 <CodeBlock
                     language="javascript"
-                    code={`function greet() {\n  console.log('Hello, DevBlogger!');\n}`}
+                    code={`function greet() {\n  console.log('Hello, ScamAlert!');\n}`}
                 />
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                     Example of a JavaScript function code block
                 </p>
                 <CodeBlock
                     language="python"
-                    code={`def greet():\n  print('Hello, DevBlogger!')`}
+                    code={`def greet():\n  print('Hello, ScamAlert!')`}
                 />
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                     Example of a Python function code block

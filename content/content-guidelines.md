@@ -1,12 +1,12 @@
-# DevBlogger Content Guidelines
+# ScamAlert Content Guidelines
 
-Welcome to DevBlogger! As a platform dedicated to developers and tech bloggers, we strive to maintain a high-quality, professional, and engaging environment. To ensure a safe and valuable space for everyone, all users must adhere to the following content guidelines. By publishing on DevBlogger, you agree to follow these rules to maintain content integrity, compliance with legal and ad policies, and respect for the community.
+Welcome to ScamAlert! As a platform dedicated to developers and tech bloggers, we strive to maintain a high-quality, professional, and engaging environment. To ensure a safe and valuable space for everyone, all users must adhere to the following content guidelines. By publishing on ScamAlert, you agree to follow these rules to maintain content integrity, compliance with legal and ad policies, and respect for the community.
 
 ## 1. General Content Quality
 
 ### ✅ High-Quality & Valuable Content
 
-- **Relevance:** DevBlogger is a platform for developers, programmers, and tech enthusiasts. All content must be related to technology, coding, software development, engineering, and related fields.
+- **Relevance:** ScamAlert is a platform for developers, programmers, and tech enthusiasts. All content must be related to technology, coding, software development, engineering, and related fields.
 - **Originality:** Content must be unique and not copied from other sources. AI-generated content must be clearly disclosed at the beginning of the post.
 - **Accuracy & Credibility:** Ensure that all information is factual, well-researched, and reliable. Include sources and references where appropriate.
 - **Clarity & Structure:** Use proper grammar, spelling, and formatting. Break content into sections with headings and bullet points for readability.
@@ -100,7 +100,7 @@ To maintain a professional and legal blogging environment, the following types o
 <!-- ADSENSE -->
 ## 3. Monetization & AdSense Compliance
 
-Since DevBlogger is an AdSense-approved platform, content must follow ad-friendly guidelines:
+Since ScamAlert is an AdSense-approved platform, content must follow ad-friendly guidelines:
 
 - **No Copyright Violations:** All content must respect intellectual property laws. Do not publish copyrighted material without permission, including:
   - Images, diagrams, and illustrations
@@ -281,7 +281,7 @@ Since DevBlogger is an AdSense-approved platform, content must follow ad-friendl
 <!-- ADSENSE -->
 ## 10. Final Statement
 
-By using DevBlogger, you agree to these guidelines. Our goal is to create a valuable, respectful, and professional blogging environment for developers worldwide. Let's work together to maintain the highest standards of quality and professionalism on the platform!
+By using ScamAlert, you agree to these guidelines. Our goal is to create a valuable, respectful, and professional blogging environment for developers worldwide. Let's work together to maintain the highest standards of quality and professionalism on the platform!
 
 These guidelines may be updated periodically. It is your responsibility to stay informed about any changes. Major updates will be announced to all users via email and platform notifications.
 

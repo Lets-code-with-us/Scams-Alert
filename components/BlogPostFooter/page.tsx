@@ -193,7 +193,7 @@ const BlogPostFooter = ({
         isMarkdown: true,
         logoUrl: post.thumbnail,
         filename: `${post.title.replace(/[^a-z0-9]/gi, '-').toLowerCase()}.pdf`,
-        author: post.createdBy || 'DevBlogger',
+        author: post.createdBy || 'ScamAlert',
         date: date
       });
 

@@ -8,7 +8,7 @@ function FPEmailTemplate(username: string, resetLink: string) {
             <head>
                 <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                        <title>DevBlogger - Password Reset</title>
+                        <title>ScamAlert - Password Reset</title>
                         <style>
                             * {
                                 box - sizing: border-box;
@@ -72,13 +72,13 @@ function FPEmailTemplate(username: string, resetLink: string) {
                     <body>
                         <div class="email-container">
                             <div class="email-header">
-                                <h1>DevBlogger</h1>
+                                <h1>ScamAlert</h1>
                                 <p>Password Reset Request</p>
                             </div>
                             <div class="email-body">
                                 <h2>Hi ${username},</h2>
 
-                                <p>You've requested to reset your password for DevBlogger. Click the button below to proceed:</p>
+                                <p>You've requested to reset your password for ScamAlert. Click the button below to proceed:</p>
 
                                 <a href="${resetLink}" class="reset-button">Reset Password</a>
 
@@ -86,10 +86,10 @@ function FPEmailTemplate(username: string, resetLink: string) {
 
                                 <p>This link expires in 10 minutes for your security.</p>
 
-                                <p>Best regards,<br>DevBlogger Team</p>
+                                <p>Best regards,<br>ScamAlert Team</p>
                             </div>
                             <div class="footer">
-                                © ${currentYear} DevBlogger. All rights reserved.
+                                © ${currentYear} ScamAlert. All rights reserved.
                             </div>
                         </div>
                     </body>
@@ -160,7 +160,7 @@ function FPSuccesfullyResetPassword(name: string) {
 <body>
     <div class="email-container">
         <div class="email-header">
-            <h1>DevBlogger</h1>
+            <h1>ScamAlert</h1>
         </div>
         <div class="email-body">
             <div class="success-icon">✅</div>
@@ -178,7 +178,7 @@ function FPSuccesfullyResetPassword(name: string) {
             </ul>
         </div>
         <div class="footer">
-            © ${currentYear} DevBlogger. All rights reserved.
+            © ${currentYear} ScamAlert. All rights reserved.
         </div>
     </div>
 </body>
@@ -192,17 +192,17 @@ const SignUpEmailTemplate = (name: string, email: string) => {
       <html>
       <head>
           <meta charset="utf-8">
-          <title>Welcome to DevBlogger</title>
+          <title>Welcome to ScamAlert</title>
       </head>
       <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
           <div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
-              <h1 style="color: #2d3748; margin-bottom: 20px;">Welcome to DevBlogger! 🎉</h1>
+              <h1 style="color: #2d3748; margin-bottom: 20px;">Welcome to ScamAlert! 🎉</h1>
               
               <p>Hi ${name},</p>
               
-              <p>Thank you for joining DevBlogger! Your account has been successfully created with the email: <strong>${email}</strong></p>
+              <p>Thank you for joining ScamAlert! Your account has been successfully created with the email: <strong>${email}</strong></p>
               
-              <p>With DevBlogger, you can:</p>
+              <p>With ScamAlert, you can:</p>
               <ul style="padding-left: 20px;">
                   <li>Share your technical knowledge</li>
                   <li>Connect with fellow developers</li>
@@ -257,7 +257,7 @@ const LoginSuccessEmailTemplateF = ({ name, loginTime, location = 'Unknown locat
     <html>
     <head>
         <meta charset="utf-8">
-        <title>New Login Alert - DevBlogger</title>
+        <title>New Login Alert - ScamAlert</title>
     </head>
     <body style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a2027; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8fafc;">
         <div style="background-color: white; padding: 32px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
@@ -270,7 +270,7 @@ const LoginSuccessEmailTemplateF = ({ name, loginTime, location = 'Unknown locat
             <!-- Main Content -->
             <div style="margin-bottom: 24px;">
                 <p style="margin-bottom: 16px;">Hello ${name},</p>
-                <p style="margin-bottom: 24px;">We noticed a new sign-in to your DevBlogger account. Here are the details:</p>
+                <p style="margin-bottom: 24px;">We noticed a new sign-in to your ScamAlert account. Here are the details:</p>
                 
                 <!-- Login Details Box -->
                 <div style="background-color: #f8fafc; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
@@ -324,7 +324,7 @@ function EmailVerificationTemplate(username: string, verificationLink: string) {
             <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>DevBlogger - Email Verification</title>
+                <title>ScamAlert - Email Verification</title>
                 <style>
                     * {
                         box-sizing: border-box;
@@ -388,24 +388,24 @@ function EmailVerificationTemplate(username: string, verificationLink: string) {
             <body>
                 <div class="email-container">
                     <div class="email-header">
-                        <h1>DevBlogger</h1>
+                        <h1>ScamAlert</h1>
                         <p>Email Verification</p>
                     </div>
                     <div class="email-body">
                         <h2>Hi ${username},</h2>
 
-                        <p>Welcome to DevBlogger! Please verify your email address by clicking the button below:</p>
+                        <p>Welcome to ScamAlert! Please verify your email address by clicking the button below:</p>
 
                         <a href="${verificationLink}" class="verify-button">Verify Email</a>
 
-                        <p>If you didn't sign up for DevBlogger, you can ignore this email.</p>
+                        <p>If you didn't sign up for ScamAlert, you can ignore this email.</p>
 
                         <p>This link expires in 15 minutes for security reasons.</p>
 
-                        <p>Best regards,<br>DevBlogger Team</p>
+                        <p>Best regards,<br>ScamAlert Team</p>
                     </div>
                     <div class="footer">
-                        © ${currentYear} DevBlogger. All rights reserved.
+                        © ${currentYear} ScamAlert. All rights reserved.
                     </div>
                 </div>
             </body>

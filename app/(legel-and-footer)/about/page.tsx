@@ -96,11 +96,11 @@ const AboutPage = () => {
                 For developers, by developers
               </Badge>
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
-                Welcome to <span className="text-blue-600 dark:text-blue-400">DevBlogger</span>
+                Welcome to <span className="text-blue-600 dark:text-blue-400">ScamAlert</span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 max-w-2xl">
                 A powerful blogging platform crafted especially for developers, tech writers, and engineering students.
-                From cracking interviews to teaching the world what you've learned — DevBlogger is where your developer
+                From cracking interviews to teaching the world what you've learned — ScamAlert is where your developer
                 journey meets content creation.
               </p>
               <div className="mt-8 flex gap-4 flex-wrap">
@@ -120,7 +120,7 @@ const AboutPage = () => {
               <div className="relative aspect-[3/2] w-full overflow-hidden bg-gradient-to-tr from-blue-100 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/30">
                 <img
                   src="/logo.png"
-                  alt="DevBlogger Platform - A blogging platform for developers"
+                  alt="ScamAlert Platform - A blogging platform for developers"
                   className="h-full w-full object-cover object-center"
                 />
               </div>
@@ -165,7 +165,7 @@ const AboutPage = () => {
               Powerful Tools for Developer Content Creators
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300">
-              DevBlogger provides all the tools and features you need to create, share, and grow your technical content.
+              ScamAlert provides all the tools and features you need to create, share, and grow your technical content.
             </p>
           </div>
 
@@ -200,7 +200,7 @@ const AboutPage = () => {
               Who We Serve
             </Badge>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              Who is DevBlogger for?
+              Who is ScamAlert for?
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300">
               Our platform serves technical professionals at every stage of their career journey.
@@ -237,7 +237,7 @@ const AboutPage = () => {
                 Built By & For Developers
               </h2>
               <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                DevBlogger was born from the needs of students and developers who wanted a better way to write,
+                ScamAlert was born from the needs of students and developers who wanted a better way to write,
                 grow, and be seen online — without the noise of generic platforms. We're continuously evolving —
                 adding new features, tools, and events tailored just for you.
               </p>
@@ -258,7 +258,7 @@ const AboutPage = () => {
                 Meet the Founder
               </h2>
               <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                The passionate mind behind DevBlogger
+                The passionate mind behind ScamAlert
               </p>
             </div>
 
@@ -272,7 +272,7 @@ const AboutPage = () => {
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
                   Beyond coding, he's an avid technical writer and mentor who believes in the power of sharing knowledge
-                  and building communities. His vision for DevBlogger stems from his own journey learning to code and
+                  and building communities. His vision for ScamAlert stems from his own journey learning to code and
                   wanting to create the platform he wished existed when he started.
                 </p>
                 <div className="flex gap-4 items-center flex-wrap">
@@ -325,7 +325,7 @@ const AboutPage = () => {
                 <div className="relative rounded-2xl overflow-hidden border-8 border-white dark:border-gray-800 shadow-xl dark:shadow-gray-900/30 w-64 h-64 sm:w-72 sm:h-72">
                   <img
                     src="/founder.jpg"
-                    alt="Rohit Kumar Yadav - Founder of DevBlogger"
+                    alt="Rohit Kumar Yadav - Founder of ScamAlert"
                     className="h-full w-full object-cover object-center transition-all duration-300 hover:scale-105"
                   />
                 </div>
@@ -383,13 +383,13 @@ const AboutPage = () => {
                   <li className="flex items-center gap-3">
                     <Globe className="w-5 h-5 text-blue-500" />
                     <span className="text-gray-700 dark:text-gray-300">
-                      <a href="https://devblogger.in/contacts" className="hover:text-blue-600 dark:hover:text-blue-400">devblogger.in</a>
+                      <a href="https://ScamAlert.in/contacts" className="hover:text-blue-600 dark:hover:text-blue-400">ScamAlert.in</a>
                     </span>
                   </li>
                   <li className="flex items-center gap-3">
                     <Mail className="w-5 h-5 text-blue-500" />
                     <span className="text-gray-700 dark:text-gray-300">
-                      <a href="mailto:rohitkuyada@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400">support@devblogger.in</a>
+                      <a href="mailto:rohitkuyada@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400">support@ScamAlert.in</a>
                     </span>
                   </li>
                 </ul>
@@ -416,9 +416,9 @@ const AboutPage = () => {
 
       {/* SEO Enhancement - Hidden sections for SEO */}
       <div className="sr-only">
-        <h2>DevBlogger - A Platform for Developer Content Creation</h2>
+        <h2>ScamAlert - A Platform for Developer Content Creation</h2>
         <p>
-          DevBlogger is the ultimate platform for developers, tech writers, and engineering students to create and share technical content.
+          ScamAlert is the ultimate platform for developers, tech writers, and engineering students to create and share technical content.
           Features include a smart blog editor, author dashboard, public portfolio, developer tools, cheatsheets, interview prep resources,
           SEO services, and blogging events.
         </p>

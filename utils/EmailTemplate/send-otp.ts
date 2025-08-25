@@ -15,10 +15,10 @@ const sendOTP = async ({
     otp,
     userName,
     companyInfo = {
-        name: 'DevBlogger',
-        logo: 'https://www.devblogger.in/logo.png',
-        website: 'https://www.devblogger.in',
-        supportEmail: 'support@devblogger.com'
+        name: 'ScamAlert',
+        logo: 'https://www.ScamAlert.in/logo.png',
+        website: 'https://www.ScamAlert.in',
+        supportEmail: 'support@ScamAlert.com'
     }
 }: SendOTPParams) => {
     const currentDate = new Date().toDateString();

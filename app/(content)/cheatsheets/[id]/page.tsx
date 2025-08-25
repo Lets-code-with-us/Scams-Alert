@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
         // thumbnail in public folder
         const thumbnailPath = path.join(process.cwd(), 'public/content', `${id}.png`);
         const thumbnailExists = await fs.access(thumbnailPath).then(() => true).catch(() => false);
-        const thumbnailUrl = thumbnailExists ? `https://www.devblogger.in/content/${id}.png` : 'https://www.devblogger.in/default-thumbnail.png';
+        const thumbnailUrl = thumbnailExists ? `https://www.ScamAlert.in/content/${id}.png` : 'https://www.ScamAlert.in/default-thumbnail.png';
         return {
             title,
             description: `Read the ${title} document - ${id}`,

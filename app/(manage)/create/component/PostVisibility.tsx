@@ -71,8 +71,8 @@ const PostVisibility = ({ state, isDarkMode, updateState }: PostVisibilityProps)
                 </div>
                 {state.status && selectionMade && (
                     <div className={`flex items-center gap-1 text-xs sm:text-sm py-1 px-2 rounded-full transition-all ${isDarkMode
-                            ? 'bg-green-900/30 text-green-300'
-                            : 'bg-green-100 text-green-700'
+                        ? 'bg-green-900/30 text-green-300'
+                        : 'bg-green-100 text-green-700'
                         }`}>
                         <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4" />
                         <span className="hidden sm:inline">Selected</span>
@@ -101,7 +101,7 @@ const PostVisibility = ({ state, isDarkMode, updateState }: PostVisibilityProps)
                                     <span className="font-medium">{getStatusLabel(state.status || '')}</span>
                                     <p className="text-xs mt-1 opacity-80">
                                         {state.status === 'rejected' && "Your post was rejected by admin. Please update and resubmit."}
-                                        {state.status === 'approved' && "Your post is approved and publicly visible on DevBlogger."}
+                                        {state.status === 'approved' && "Your post is approved and publicly visible on ScamAlert."}
                                         {state.status === 'deleted' && "This post has been deleted."}
                                     </p>
                                 </div>
@@ -118,8 +118,8 @@ const PostVisibility = ({ state, isDarkMode, updateState }: PostVisibilityProps)
                                 onValueChange={(value: string) => handleStatusChange(value as any)}
                             >
                                 <div className={`flex items-center space-x-2 p-3 rounded-md cursor-pointer transition-colors border ${state.status === 'draft'
-                                        ? (isDarkMode ? "bg-gray-700 border-gray-600" : "bg-accent/70 border-input")
-                                        : (isDarkMode ? "border-gray-600" : "border-input")
+                                    ? (isDarkMode ? "bg-gray-700 border-gray-600" : "bg-accent/70 border-input")
+                                    : (isDarkMode ? "border-gray-600" : "border-input")
                                     } ${isDarkMode ? "hover:bg-gray-700/70" : "hover:bg-accent"}`}>
                                     <RadioGroupItem id="draft" value="draft" className="flex-shrink-0" />
                                     <Label htmlFor="draft" className="cursor-pointer flex items-center gap-2 w-full">
@@ -132,8 +132,8 @@ const PostVisibility = ({ state, isDarkMode, updateState }: PostVisibilityProps)
                                 </div>
 
                                 <div className={`flex items-center space-x-2 p-3 rounded-md cursor-pointer transition-colors border ${state.status === 'private'
-                                        ? (isDarkMode ? "bg-gray-700 border-gray-600" : "bg-accent/70 border-input")
-                                        : (isDarkMode ? "border-gray-600" : "border-input")
+                                    ? (isDarkMode ? "bg-gray-700 border-gray-600" : "bg-accent/70 border-input")
+                                    : (isDarkMode ? "border-gray-600" : "border-input")
                                     } ${isDarkMode ? "hover:bg-gray-700/70" : "hover:bg-accent"}`}>
                                     <RadioGroupItem id="private" value="private" className="flex-shrink-0" />
                                     <Label htmlFor="private" className="cursor-pointer flex items-center gap-2 w-full">
@@ -146,22 +146,22 @@ const PostVisibility = ({ state, isDarkMode, updateState }: PostVisibilityProps)
                                 </div>
 
                                 <div className={`flex items-center space-x-2 p-3 rounded-md cursor-pointer transition-colors border ${state.status === 'pending_review'
-                                        ? (isDarkMode ? "bg-gray-700 border-gray-600" : "bg-accent/70 border-input")
-                                        : (isDarkMode ? "border-gray-600" : "border-input")
+                                    ? (isDarkMode ? "bg-gray-700 border-gray-600" : "bg-accent/70 border-input")
+                                    : (isDarkMode ? "border-gray-600" : "border-input")
                                     } ${isDarkMode ? "hover:bg-gray-700/70" : "hover:bg-accent"}`}>
                                     <RadioGroupItem id="pending_review" value="pending_review" className="flex-shrink-0" />
                                     <Label htmlFor="pending_review" className="cursor-pointer flex items-center gap-2 w-full">
                                         <Clock className="w-4 h-4 flex-shrink-0" />
                                         <div>
                                             <span className="font-medium">Publish</span>
-                                            <p className="text-xs mt-1 text-muted-foreground">Submit for review to appear on DevBlogger</p>
+                                            <p className="text-xs mt-1 text-muted-foreground">Submit for review to appear on ScamAlert</p>
                                         </div>
                                     </Label>
                                 </div>
 
                                 <div className={`flex items-center space-x-2 p-3 rounded-md cursor-pointer transition-colors border ${state.status === 'archived'
-                                        ? (isDarkMode ? "bg-gray-700 border-gray-600" : "bg-accent/70 border-input")
-                                        : (isDarkMode ? "border-gray-600" : "border-input")
+                                    ? (isDarkMode ? "bg-gray-700 border-gray-600" : "bg-accent/70 border-input")
+                                    : (isDarkMode ? "border-gray-600" : "border-input")
                                     } ${isDarkMode ? "hover:bg-gray-700/70" : "hover:bg-accent"}`}>
                                     <RadioGroupItem id="archived" value="archived" className="flex-shrink-0" />
                                     <Label htmlFor="archived" className="cursor-pointer flex items-center gap-2 w-full">
@@ -196,7 +196,7 @@ const PostVisibility = ({ state, isDarkMode, updateState }: PostVisibilityProps)
                     {/* Status explanation */}
                     <div className="text-xs text-muted-foreground">
                         {state.status === 'private' && "Private posts are only visible when sharing the direct link."}
-                        {state.status === 'pending_review' && "Your post will be reviewed by an admin before appearing on DevBlogger."}
+                        {state.status === 'pending_review' && "Your post will be reviewed by an admin before appearing on ScamAlert."}
                         {state.status === 'draft' && "Drafts are only visible to you in your dashboard."}
                         {state.status === 'archived' && "Archived posts are hidden from all listings, only you can access them."}
                     </div>

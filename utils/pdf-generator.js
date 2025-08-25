@@ -11,7 +11,7 @@ export const generateSimplePdf = async (options) => {
     isMarkdown = true,
     author = '',
     date = new Date().toLocaleDateString(),
-    thumbnailUrl = 'https://www.devblogger.in/default-thumbnail.png',
+    thumbnailUrl = 'https://www.ScamAlert.in/default-thumbnail.png',
     subtitle = '',
     filename = `${title.replace(/[^a-z0-9]/gi, '-').toLowerCase()}.pdf`
   } = options;
@@ -26,9 +26,9 @@ export const generateSimplePdf = async (options) => {
     // Set PDF properties
     pdf.setProperties({
       title,
-      subject: `DevBlogger: ${title}`,
-      author: author || 'DevBlogger',
-      creator: 'DevBlogger.in'
+      subject: `ScamAlert: ${title}`,
+      author: author || 'ScamAlert',
+      creator: 'ScamAlert.in'
     });
 
     // Add background color
@@ -78,18 +78,18 @@ export const generateSimplePdf = async (options) => {
     pdf.setFontSize(12);
     pdf.setFont('times', 'italic');
     pdf.setTextColor(90, 90, 90);
-    pdf.text(`Written by: ${author || 'DevBlogger'} | Published on: ${date}`, pageWidth / 2, metaY, { align: 'center' });
+    pdf.text(`Written by: ${author || 'ScamAlert'} | Published on: ${date}`, pageWidth / 2, metaY, { align: 'center' });
 
     // Decorative line
     pdf.setDrawColor(180, 180, 180);
     pdf.setLineWidth(0.3);
     pdf.line(margin, metaY + 10, pageWidth - margin, metaY + 10);
 
-    // DevBlogger footer / slogan
+    // ScamAlert footer / slogan
     pdf.setFontSize(10);
     pdf.setFont('helvetica', 'normal');
     pdf.setTextColor(120, 120, 120);
-    pdf.text('Empowering devs, one blog at a time – DevBlogger.in', pageWidth / 2, pageHeight - 20, { align: 'center' });
+    pdf.text('Empowering devs, one blog at a time – ScamAlert.in', pageWidth / 2, pageHeight - 20, { align: 'center' });
 
     pdf.addPage();
 
@@ -331,7 +331,7 @@ export const generateSimplePdf = async (options) => {
       pdf.line(margin, pageHeight - 15, pageWidth - margin, pageHeight - 15);
 
       // Footer left
-      pdf.text('Published via DevBlogger.in', margin, pageHeight - 8);
+      pdf.text('Published via ScamAlert.in', margin, pageHeight - 8);
 
       // Footer right, for content pages only
       if (i > 1) {

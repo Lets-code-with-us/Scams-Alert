@@ -1,6 +1,6 @@
 {
     "id": "com.devbloggers.app",
-    "name": "Dev Blogger",
+    "name": "Scam Alert",
     "short_name": "DevBlog",
     "description": "Your go-to platform for tech blogs, coding tutorials, and developer insights. Join the global dev community to read, write, and share knowledge.",
     "start_url": "/blogs",

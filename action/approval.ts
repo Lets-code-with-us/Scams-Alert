@@ -54,8 +54,8 @@ const ApproveBlog = async (blogId: string, sendNotification: boolean, status: st
             await blog.save();
             await sendEmail({
                 to: blog.createdBy,
-                subject: "Congratulations! Your Blog is Approved | DevBlogger",
-                message: BlogApproved(AuthorName, blog.title, `https://devblogger.com/blog/${blog.slug}`),
+                subject: "Congratulations! Your Blog is Approved | ScamAlert",
+                message: BlogApproved(AuthorName, blog.title, `https://ScamAlert.com/blog/${blog.slug}`),
             });
 
             if (sendNotification) {
@@ -100,8 +100,8 @@ const ApproveBlog = async (blogId: string, sendNotification: boolean, status: st
             await blog.save();
             await sendEmail({
                 to: blog.createdBy,
-                subject: "Blog Rejected | DevBlogger",
-                message: BlogRejected("Author", blog.title, reason, `https://devblogger.com/dashboard`),
+                subject: "Blog Rejected | ScamAlert",
+                message: BlogRejected("Author", blog.title, reason, `https://ScamAlert.com/dashboard`),
             });
 
             return {

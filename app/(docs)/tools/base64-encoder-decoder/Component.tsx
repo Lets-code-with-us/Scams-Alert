@@ -214,7 +214,7 @@ const Base64EncoderDecoder: React.FC = () => {
 
     const sampleData = [
         { input: "Hello, World!", description: "Basic Text" },
-        { input: "https://devblogger.in/tools/base64", description: "URL" },
+        { input: "https://ScamAlert.in/tools/base64", description: "URL" },
         { input: "1234567890", description: "Numbers" },
         { input: "🚀 👨‍💻 🌍", description: "Emoji" },
     ];
@@ -227,17 +227,17 @@ const Base64EncoderDecoder: React.FC = () => {
     return (
         <>
             <Head>
-                <title>Base64 Encoder/Decoder - Convert Text to Base64 and Back | DevBlogger</title>
+                <title>Base64 Encoder/Decoder - Convert Text to Base64 and Back | ScamAlert</title>
                 <meta name="description" content="Free online tool to encode text to Base64 and decode Base64 to text. Supports UTF-8, file encoding/decoding, and URL-safe Base64 format." />
                 <meta name="keywords" content="base64, encoder, decoder, base64 converter, online encoder, base64 decode, base64 encode, URL-safe base64" />
                 <meta property="og:title" content="Base64 Encoder/Decoder Tool" />
                 <meta property="og:description" content="Free online tool to encode and decode Base64 strings with support for UTF-8 and file handling." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://devblogger.in/tools/base64" />
+                <meta property="og:url" content="https://ScamAlert.in/tools/base64" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Base64 Encoder/Decoder Tool" />
                 <meta name="twitter:description" content="Free online tool to encode and decode Base64 strings with support for UTF-8 and file handling." />
-                <link rel="canonical" href="https://devblogger.in/tools/base64" />
+                <link rel="canonical" href="https://ScamAlert.in/tools/base64" />
             </Head>
 
             <div className="container mx-auto px-4 py-8 max-w-6xl">
@@ -509,7 +509,7 @@ const Base64EncoderDecoder: React.FC = () => {
                 </div>
 
                 <div className="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
-                    <p>Made with ❤️ for developers by <a href="https://devblogger.in" className="text-blue-600 hover:underline">DevBlogger</a></p>
+                    <p>Made with ❤️ for developers by <a href="https://ScamAlert.in" className="text-blue-600 hover:underline">ScamAlert</a></p>
                 </div>
             </div>
         </>

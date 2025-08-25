@@ -25,7 +25,7 @@ const resetPasswordRequest = async (user: any, req: NextRequest): Promise<{ mess
 
     if ((tokenGeneratedAt && (currentTime - tokenGeneratedAt) < TokenExpirationTime) && user.resetPasswordToken) {
         resetPasswordToken = user.resetPasswordToken;
-        subject = "Password Reset Request for DevBlogger 01 (Extra Email)";
+        subject = "Password Reset Request for ScamAlert 01 (Extra Email)";
     } else {
         // Generate a random token for password reset
         resetPasswordToken = cryptoRandomString({ length: 32, type: 'url-safe' });
@@ -40,7 +40,7 @@ const resetPasswordRequest = async (user: any, req: NextRequest): Promise<{ mess
         } catch (error) {
             throw new Error("Error while saving the user");
         }
-        subject = "Password Reset Request for DevBlogger";
+        subject = "Password Reset Request for ScamAlert";
     }
 
     // Rest of your code remains the same...

@@ -46,13 +46,13 @@ const SignupContainer: FC = () => {
                                     }`}>
                                     <img
                                         src="/logo.png"
-                                        alt="DevBlogger Logo"
+                                        alt="ScamAlert Logo"
                                         className="w-12 h-auto rounded-full"
                                     />
                                 </div>
                                 <h3 className={`text-2xl font-bold mb-2 ${isDarkMode ? 'text-indigo-300' : 'text-indigo-800'
                                     }`}>
-                                    Welcome to DevBlogger
+                                    Welcome to ScamAlert
                                 </h3>
                                 <p className={`text-sm ${isDarkMode ? 'text-indigo-400' : 'text-indigo-600'
                                     }`}>
@@ -137,7 +137,7 @@ const SignupContainer: FC = () => {
                             }`}>
                             <h3 className={`text-lg font-bold mb-4 text-center ${isDarkMode ? 'text-white' : 'text-gray-900'
                                 }`}>
-                                Why join DevBlogger?
+                                Why join ScamAlert?
                             </h3>
                             <div className="grid grid-cols-2 gap-3">
                                 <BrandFeature text="Write & share articles" />

@@ -15,7 +15,7 @@ interface Tool {
 }
 
 /**
- * DevBlogger Tools Collection
+ * ScamAlert Tools Collection
  * A showcase of web development and content creation tools
  */
 const ToolsCollection: React.FC = () => {
@@ -166,7 +166,7 @@ const ToolsCollection: React.FC = () => {
         <>
             <div className="container mx-auto px-4 py-12 max-w-7xl">
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">DevBlogger Tools</h1>
+                    <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">ScamAlert Tools</h1>
                     <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
                         Free online tools for developers and content creators to simplify your workflow
                     </p>

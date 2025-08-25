@@ -3,7 +3,7 @@ import Base64EncoderDecoder from './Component'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Dev Blogger Base64 Encoder Decoder - Encode and Decode Base64 Strings Online',
+  title: 'Scam Alert Base64 Encoder Decoder - Encode and Decode Base64 Strings Online',
   alternates: {
     canonical: '/tools/base64-encoder-decoder',
   },

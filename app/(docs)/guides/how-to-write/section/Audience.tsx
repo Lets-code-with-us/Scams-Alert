@@ -13,7 +13,7 @@ const Audience = ({ isDarkMode }: { isDarkMode: boolean }) => {
                 />
 
                 <p className="text-lg mb-6">
-                    Before you start writing, it's crucial to understand who you're writing for. DevBlogger hosts content for developers at various experience levels:
+                    Before you start writing, it's crucial to understand who you're writing for. ScamAlert hosts content for developers at various experience levels:
                 </p>
 
                 <Image

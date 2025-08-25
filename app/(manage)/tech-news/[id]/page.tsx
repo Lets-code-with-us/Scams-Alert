@@ -80,17 +80,17 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
 
     if (!response.success || !response.data) {
         return {
-            title: 'Blog Post Not Found - DevBlogger',
+            title: 'Blog Post Not Found - ScamAlert',
             description: 'The blog post you are looking for does not exist',
             openGraph: {
-                title: 'Blog Post Not Found - DevBlogger',
+                title: 'Blog Post Not Found - ScamAlert',
                 description: 'The blog post you are looking for does not exist',
                 images: ['/default-thumbnail.png'],
-                url: 'https://www.devblogger.in',
+                url: 'https://www.ScamAlert.in',
             },
             twitter: {
                 card: 'summary_large_image',
-                title: 'Blog Post Not Found - DevBlogger',
+                title: 'Blog Post Not Found - ScamAlert',
                 description: 'The blog post you are looking for does not exist',
                 images: ['/default-thumbnail.png'],
             },
@@ -98,10 +98,10 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     }
 
     const postData = response.data;
-    const title = postData?.title || 'DevBlogger Blog Post';
+    const title = postData?.title || 'ScamAlert Blog Post';
     const thumbnailUrl = postData?.thumbnail || '/default-thumbnail.png';
     const description = postData?.content.replace(/<[^>]*>?/gm, '').substring(0, 140);
-    const url = `https://www.devblogger.in/blogs/${response.data.slug}`;
+    const url = `https://www.ScamAlert.in/blogs/${response.data.slug}`;
 
     return {
         title,
@@ -172,10 +172,10 @@ export default async function IndividualBlogPost({ params }: { params: { id: str
         },
         publisher: {
             '@type': 'Organization',
-            name: 'DevBlogger',
+            name: 'ScamAlert',
             logo: {
                 '@type': 'ImageObject',
-                url: 'https://www.devblogger.in/path/to/logo.png',
+                url: 'https://www.ScamAlert.in/path/to/logo.png',
             },
         },
     };

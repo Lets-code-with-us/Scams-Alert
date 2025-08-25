@@ -1,7 +1,7 @@
 const BlogApproved = (name: string, blogTitle: string, blogUrl: string): string => {
     const authorName = name || "Author";
     const BlogTitle = blogTitle || "Your Blog Title";
-    const BlogUrl = blogUrl || "https://devblogger.in/blogs";
+    const BlogUrl = blogUrl || "https://ScamAlert.in/blogs";
     const currentYear = new Date().getFullYear();
 
     return `<!DOCTYPE html>
@@ -85,18 +85,18 @@ const BlogApproved = (name: string, blogTitle: string, blogUrl: string): string 
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://devblogger.in/logo.png" alt="DevBlogger Logo" class="logo" />
+            <img src="https://ScamAlert.in/logo.png" alt="ScamAlert Logo" class="logo" />
             <h1>Congratulations! Your Blog is Approved</h1>
         </div>
         <div class="content">
             <p>Dear ${authorName},</p>
            
-            <p>We're excited to inform you that your blog post <strong>"${blogTitle}"</strong> has been approved and is now live on DevBlogger! Thank you for your valuable contribution to our community.</p>
+            <p>We're excited to inform you that your blog post <strong>"${blogTitle}"</strong> has been approved and is now live on ScamAlert! Thank you for your valuable contribution to our community.</p>
            
             <div class="visibility-info">
                 <p><strong>Your blog is now public</strong>, which means:</p>
                 <ul>
-                    <li>It's displayed on the DevBlogger platform</li>
+                    <li>It's displayed on the ScamAlert platform</li>
                     <li>Anyone can discover and read it</li>
                     <li>It will appear in relevant searches and categories</li>
                     <li>Other users can engage with your content</li>
@@ -111,28 +111,28 @@ const BlogApproved = (name: string, blogTitle: string, blogUrl: string): string 
             
             <div class="social-share">
                 <p>Share your blog with your network:</p>
-                <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(BlogUrl)}&text=${encodeURIComponent(`Check out my new blog post: ${BlogTitle} on DevBlogger!`)}" target="_blank" class="social-icon">
-                    <img src="https://devblogger.in/images/twitter-icon.png" alt="Twitter" width="32" height="32" />
+                <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(BlogUrl)}&text=${encodeURIComponent(`Check out my new blog post: ${BlogTitle} on ScamAlert!`)}" target="_blank" class="social-icon">
+                    <img src="https://ScamAlert.in/images/twitter-icon.png" alt="Twitter" width="32" height="32" />
                 </a>
                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(BlogUrl)}&title=${encodeURIComponent(BlogTitle)}" target="_blank" class="social-icon">
-                    <img src="https://devblogger.in/images/linkedin-icon.png" alt="LinkedIn" width="32" height="32" />
+                    <img src="https://ScamAlert.in/images/linkedin-icon.png" alt="LinkedIn" width="32" height="32" />
                 </a>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(BlogUrl)}" target="_blank" class="social-icon">
-                    <img src="https://devblogger.in/images/facebook-icon.png" alt="Facebook" width="32" height="32" />
+                    <img src="https://ScamAlert.in/images/facebook-icon.png" alt="Facebook" width="32" height="32" />
                 </a>
             </div>
            
             <p>Remember, if you ever want to make your blog private, you can do so from your dashboard. Private blogs are only accessible to people who have the direct link.</p>
            
-            <p>Keep writing and sharing your knowledge with the DevBlogger community!</p>
+            <p>Keep writing and sharing your knowledge with the ScamAlert community!</p>
            
-            <p>Best Regards,<br>The DevBlogger Team</p>
+            <p>Best Regards,<br>The ScamAlert Team</p>
         </div>
        
         <div class="footer">
-            <p>© ${currentYear} DevBlogger. All rights reserved.</p>
-            <p>Questions? Contact us at <a href="mailto:support@devblogger.in">support@devblogger.in</a></p>
-            <p><small>If you no longer wish to receive these emails, you can <a href="https://devblogger.in/settings/notifications">unsubscribe here</a>.</small></p>
+            <p>© ${currentYear} ScamAlert. All rights reserved.</p>
+            <p>Questions? Contact us at <a href="mailto:support@ScamAlert.in">support@ScamAlert.in</a></p>
+            <p><small>If you no longer wish to receive these emails, you can <a href="https://ScamAlert.in/settings/notifications">unsubscribe here</a>.</small></p>
         </div>
     </div>
 </body>
@@ -143,7 +143,7 @@ const BlogRejected = (name: string, blogTitle: string, reason: string, dashboard
     const authorName = name || "Author";
     const BlogTitle = blogTitle || "Your Blog Title";
     const rejectionReason = reason || "It doesn't meet our community guidelines.";
-    const dashboardLink = dashboardUrl || "https://devblogger.in/dashboard";
+    const dashboardLink = dashboardUrl || "https://ScamAlert.in/dashboard";
     const currentYear = new Date().getFullYear();
 
     return `<!DOCTYPE html>
@@ -223,13 +223,13 @@ const BlogRejected = (name: string, blogTitle: string, reason: string, dashboard
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://devblogger.in/logo.png" alt="DevBlogger Logo" class="logo" />
+            <img src="https://ScamAlert.in/logo.png" alt="ScamAlert Logo" class="logo" />
             <h1>Update on Your Blog Submission</h1>
         </div>
         <div class="content">
             <p>Dear ${authorName},</p>
            
-            <p>Thank you for submitting your blog post <strong>"${BlogTitle}"</strong> to DevBlogger. We appreciate the time and effort you put into creating content for our platform.</p>
+            <p>Thank you for submitting your blog post <strong>"${BlogTitle}"</strong> to ScamAlert. We appreciate the time and effort you put into creating content for our platform.</p>
            
             <p>After careful review, we've determined that your submission needs some adjustments before it can be published. Here's the feedback from our review team:</p>
            
@@ -247,7 +247,7 @@ const BlogRejected = (name: string, blogTitle: string, reason: string, dashboard
                 </ul>
             </div>
            
-            <p>We encourage you to make the suggested changes and resubmit your blog. Our goal is to help you create content that resonates with our community while maintaining the quality standards of DevBlogger.</p>
+            <p>We encourage you to make the suggested changes and resubmit your blog. Our goal is to help you create content that resonates with our community while maintaining the quality standards of ScamAlert.</p>
            
             <div style="text-align: center; margin: 25px 0;">
                 <a href="${dashboardLink}" target="_blank" class="cta-button">Go to Your Dashboard</a>
@@ -255,13 +255,13 @@ const BlogRejected = (name: string, blogTitle: string, reason: string, dashboard
            
             <p>If you have any questions about the feedback or need further clarification, please don't hesitate to reach out to our support team.</p>
            
-            <p>Best Regards,<br>The DevBlogger Team</p>
+            <p>Best Regards,<br>The ScamAlert Team</p>
         </div>
        
         <div class="footer">
-            <p>© ${currentYear} DevBlogger. All rights reserved.</p>
-            <p>Questions? Contact us at <a href="mailto:support@devblogger.in">support@devblogger.in</a></p>
-            <p><small>If you no longer wish to receive these emails, you can <a href="https://devblogger.in/settings/notifications">unsubscribe here</a>.</small></p>
+            <p>© ${currentYear} ScamAlert. All rights reserved.</p>
+            <p>Questions? Contact us at <a href="mailto:support@ScamAlert.in">support@ScamAlert.in</a></p>
+            <p><small>If you no longer wish to receive these emails, you can <a href="https://ScamAlert.in/settings/notifications">unsubscribe here</a>.</small></p>
         </div>
     </div>
 </body>

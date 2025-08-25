@@ -66,7 +66,7 @@ const GuidePage = () => {
                     >
                         <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent 
               bg-gradient-to-r from-blue-600 to-indigo-600">
-                            The Complete Guide to Writing Technical Blogs on DevBlogger
+                            The Complete Guide to Writing Technical Blogs on ScamAlert
                         </h1>
                         <p className="text-xl mb-8 max-w-3xl mx-auto text-gray-600 dark:text-gray-300">
                             Everything you need to know about creating impactful technical blogs that engage readers and showcase your expertise.
@@ -106,10 +106,10 @@ const GuidePage = () => {
 
                         {/* Main Content */}
                         <div className="lg:col-span-3">
-                            {/* Why Write on DevBlogger */}
+                            {/* Why Write on ScamAlert */}
                             <section id="why-write" className="mb-16">
                                 <SectionHeader
-                                    title="Why Write on DevBlogger?"
+                                    title="Why Write on ScamAlert?"
                                     subtitle="Discover the benefits of sharing your technical knowledge"
                                 />
 
@@ -139,7 +139,7 @@ const GuidePage = () => {
                                 </div>
 
                                 <p className="text-lg mb-4">
-                                    DevBlogger isn't just another blogging platform—it's a thriving community specifically designed for developers who want to share their knowledge, experiences, and insights.
+                                    ScamAlert isn't just another blogging platform—it's a thriving community specifically designed for developers who want to share their knowledge, experiences, and insights.
                                 </p>
                                 <p className="text-lg mb-4">
                                     By consistently publishing quality content, you'll establish yourself as a thought leader in your field, potentially opening doors to speaking opportunities, job offers, and professional connections.
@@ -168,11 +168,11 @@ const GuidePage = () => {
                             <section id="conclusion" className="mb-16">
                                 <SectionHeader
                                     title="Conclusion"
-                                    subtitle="Your journey to becoming a successful DevBlogger"
+                                    subtitle="Your journey to becoming a successful ScamAlert"
                                 />
 
                                 <p className="text-lg mb-6">
-                                    Writing technical blogs on DevBlogger is a rewarding experience that can help you grow as a developer and connect with the community. By following the tips and best practices outlined in this guide, you'll be well on your way to creating impactful content.
+                                    Writing technical blogs on ScamAlert is a rewarding experience that can help you grow as a developer and connect with the community. By following the tips and best practices outlined in this guide, you'll be well on your way to creating impactful content.
                                 </p>
 
                                 <div className={`p-4 rounded-lg ${isDarkMode ? 'bg-blue-900/20' : 'bg-blue-50'}`}>
@@ -209,11 +209,11 @@ const GuidePage = () => {
                             <section id="faq" className="mb-16">
                                 <SectionHeader
                                     title="Frequently Asked Questions"
-                                    subtitle="Common queries about blogging on DevBlogger"
+                                    subtitle="Common queries about blogging on ScamAlert"
                                 />
 
                                 <p className="text-lg mb-6">
-                                    Here are some common questions new bloggers have when starting on DevBlogger:
+                                    Here are some common questions new bloggers have when starting on ScamAlert:
                                 </p>
 
                                 <ul className="list-disc list-inside space-y-4 mb-8">
@@ -233,7 +233,7 @@ const GuidePage = () => {
                                         <ThumbsUp size={20} className="mr-2" /> FAQ Tip
                                     </p>
                                     <p className="text-gray-700 dark:text-gray-300">
-                                        Don't hesitate to reach out to the DevBlogger community for support and advice!
+                                        Don't hesitate to reach out to the ScamAlert community for support and advice!
                                     </p>
                                 </div>
                             </section>

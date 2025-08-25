@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
 
-const BASE_URL = "https://www.devblogger.in";
+const BASE_URL = "https://www.ScamAlert.in";
 
 export async function GET() {
     const contentDir = path.join(process.cwd(), 'content');

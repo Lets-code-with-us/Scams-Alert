@@ -48,11 +48,11 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
 
     if (!response || !response.success || !response.author) {
         return {
-            title: "Author Not Found | DevBlogger",
-            description: "The requested author profile could not be found on DevBlogger. Explore expert developer blogs, coding insights, and web development trends.",
+            title: "Author Not Found | ScamAlert",
+            description: "The requested author profile could not be found on ScamAlert. Explore expert developer blogs, coding insights, and web development trends.",
             openGraph: {
                 title: "Author Not Found",
-                description: "This author does not exist or has not published any posts. Discover top programming blogs and tech articles on DevBlogger.",
+                description: "This author does not exist or has not published any posts. Discover top programming blogs and tech articles on ScamAlert.",
                 images: [{ url: "/default-profile.jpg", width: 1200, height: 630 }]
             },
             other: {
@@ -70,8 +70,8 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     }
 
     const authorName = formatAuthorName(author.name);
-    const description = `${author.name}'s expert blogs on web development, JavaScript, React and modern tech. Quality coding insights on DevBlogger.`;
-    const url = `https://www.devblogger.in/author/${author.username}`;
+    const description = `${author.name}'s expert blogs on web development, JavaScript, React and modern tech. Quality coding insights on ScamAlert.`;
+    const url = `https://www.ScamAlert.in/author/${author.username}`;
     let thumbnail
     if (isValidUrl(author.image))
         thumbnail = author.image;
@@ -82,21 +82,21 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     const lastUpdated = new Date(author?.updatedAt ?? new Date()).toISOString();
 
     return {
-        title: `${authorName} - Expert Dev Blogs & Coding Tutorials | DevBlogger`,
+        title: `${authorName} - Expert Dev Blogs & Coding Tutorials | ScamAlert`,
         description,
         keywords: "developer blogs, programming articles, web development, coding tutorials",
         openGraph: {
-            title: `🔥 ${authorName}’s Best Coding Blogs & Developer Tips | DevBlogger`,
+            title: `🔥 ${authorName}’s Best Coding Blogs & Developer Tips | ScamAlert`,
             description,
             url,
-            siteName: "DevBlogger",
+            siteName: "ScamAlert",
             type: "profile",
             images: [thumbnail],
             locale: "en_US"
         },
         twitter: {
             card: "summary_large_image",
-            site: "@DevBlogger",
+            site: "@ScamAlert",
             creator: `@${author.username}`,
             title: `${authorName} - Dev Blogs & Tech Tutorials`,
             description,

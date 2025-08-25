@@ -82,7 +82,7 @@ const ImageSEOandPromotion = ({ isDarkMode }: { isDarkMode: boolean }) => {
                 />
 
                 <p className="text-lg mb-6">
-                    DevBlogger allows you to save your posts as drafts or publish them immediately. Use draft mode to refine your content before going live.
+                    ScamAlert allows you to save your posts as drafts or publish them immediately. Use draft mode to refine your content before going live.
                 </p>
 
                 <div className={`p-4 rounded-lg ${isDarkMode ? 'bg-blue-900/20' : 'bg-blue-50'}`}>
