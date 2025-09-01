@@ -3,7 +3,6 @@ import React from 'react';
 import Link from 'next/link';
 import { HomeIcon, ArrowLeft, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useDarkMode } from '@/hooks/useDarkMode';
 import SearchBar404 from './_component/SearchBar404';
 import { useTheme } from '@/context/ThemeContext';
 

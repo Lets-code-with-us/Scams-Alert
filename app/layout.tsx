@@ -5,7 +5,6 @@ import { Toaster } from 'react-hot-toast';
 import { Toaster as T } from '@/components/ui/toaster';
 import { Analytics } from "@vercel/analytics/react"
 import { ThemeProvider } from "@/context/ThemeContext";
-import Script from "next/script";
 import SessionWrapper from "@/app/_component/sessionWrapper";
 import Footer from "./(legel-and-footer)/footer/page";
 import { Navbar } from "./_component/navbar/navbarComponent";
@@ -149,90 +148,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "ScamAlert",
-    "alternateName": [
-      "Scam Alert",
-      "Developer Blogger",
-      "Dev Blog",
-      "Developer Blog",
-      "Blog for Developers",
-      "Blogging",
-    ],
-    url: "https://www.ScamAlert.in",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: "https://www.ScamAlert.in/search?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "ScamAlert",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.ScamAlert.in/icons/android/android-launchericon-192-192.png",
-        width: 192,
-        height: 192
-      }
-    },
-    sameAs: [
-      "https://twitter.com/rohit.ayadav",
-    ],
-    mainEntity: {
-      "@type": "Blog",
-      name: "ScamAlert",
-      description: "Explore a user-friendly blogging platform built with Next.js. Effortlessly create, update, and share blogs on diverse topics with customizable features and an interactive interface.",
-      url: "https://www.ScamAlert.in",
-      inLanguage: "en",
-      isAccessibleForFree: "True",
-      creator: {
-        "@type": "Person",
-        name: "Rohit Ayadav"
-      }
-    }
-  };
-
-  const organizationJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "ScamAlert",
-    url: "https://www.ScamAlert.in",
-    logo: "https://www.ScamAlert.in/icons/android/android-launchericon-192-192.png",
-    sameAs: [
-      "https://twitter.com/rohit.ayadav",
-    ]
-  };
-
+ 
   return (
     <html lang="en">
-      <head>
-        <Script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js" />
-        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8778160378200057" />
-        <meta name="google-adsense-account" content="ca-pub-8778160378200057"></meta>
-        <Script
-          id="json-ld"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-          strategy="afterInteractive"
-        />
-        <Script
-          id="organization-json-ld"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
-          strategy="afterInteractive"
-        />
-        <Script
-          src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
-          id="google-recaptcha"
-          strategy="beforeInteractive"
-        />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
         <Toaster position="top-right" reverseOrder={false} />
         <T />

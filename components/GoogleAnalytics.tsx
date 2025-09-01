@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Script from "next/script";
 
-const GA_TRACKING_ID = "G-0B1G76KXJL";
+const GA_TRACKING_ID = "UNKNOWN";
 
 const GoogleAnalytics = () => {
     useEffect(() => {
@@ -15,7 +15,7 @@ const GoogleAnalytics = () => {
 
     return (
         <>
-            <Script
+            {/* <Script
                 strategy="afterInteractive"
                 src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
             />
@@ -26,7 +26,7 @@ const GoogleAnalytics = () => {
           gtag('js', new Date());
           gtag('config', '${GA_TRACKING_ID}', { page_path: window.location.pathname });
         `}
-            </Script>
+            </Script> */}
         </>
     );
 };
