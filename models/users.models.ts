@@ -22,7 +22,7 @@ const userSchema = new mongoose.Schema({
   },
   provider: {
     type: String,
-    enum: ["google", "github", "credentials"],
+    enum: ["google", "facebook", "twitter", "linkedin", "credentials"],
     default: "credentials"
   },
   providerId: {
@@ -37,15 +37,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: ""
   },
-  follower: {
-    type: Number,
-    default: 0
-  },
-  following: {
-    type: Number,
-    default: 0
-  },
-  noOfBlogs: {
+  reportsCount: {
     type: Number,
     default: 0
   },
@@ -90,28 +82,15 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: ""
   },
-  socialLinks: {
-    github: {
-      type: String,
-      default: ""
-    },
-    twitter: {
-      type: String,
-      default: ""
-    },
-    linkedin: {
-      type: String,
-      default: ""
-    },
-    facebook: {
-      type: String,
-      default: ""
-    },
-    instagram: {
-      type: String,
-      default: ""
+  socialLinks: [
+    {
+      platform: {
+        type: String,
+        enum: ["linkedin", "twitter", "facebook", "instagram", "other"]
+      },
+      url: String
     }
-  }
+  ]
 });
 
 userSchema.pre("save", async function (next) {
