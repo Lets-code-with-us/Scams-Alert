@@ -4,7 +4,6 @@ import ContentCreationGuide from '@/components/HomepageComponent/ContentCreation
 import { Card, CardContent } from '@/components/ui/card';
 import { useTheme } from '@/context/ThemeContext';
 import { Lightbulb, PenTool, BarChart, Clock, BookOpen } from 'lucide-react';
-import Link from 'next/link';
 
 const ContentCreationGuidePage = () => {
     const { isDarkMode } = useTheme();
@@ -117,76 +116,11 @@ const ContentCreationGuidePage = () => {
                                         </div>
                                     </li>
                                 </ul>
-
-                                {/* <div className="mt-8 text-center">
-                                    <Link href="/content-calendar">
-                                        <span className={`inline-block px-6 py-2 rounded-full ${isDarkMode ? 'bg-blue-600 hover:bg-blue-700 text-white' : 'bg-blue-100 hover:bg-blue-200 text-blue-800'} transition-colors font-medium`}>
-                                            Plan Your Content Calendar →
-                                        </span>
-                                    </Link>
-                                </div> */}
                             </CardContent>
                         </Card>
                     </div>
                 </div>
             </section>
-
-            {/* Related Tools Section */}
-            {/* <section className={`py-16 ${isDarkMode ? 'bg-gray-900' : 'bg-gray-50'}`}>
-                <div className="container mx-auto px-6">
-                    <h2 className="text-2xl font-bold mb-8 text-center">Content Creation Tools</h2>
-
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <Link href="/tools/blog-ideas">
-                            <Card className={`h-full border-0 ${isDarkMode ? 'bg-gray-800 hover:bg-gray-750' : 'bg-white hover:bg-gray-100'} transition-all cursor-pointer`}>
-                                <CardContent className="p-6 flex flex-col h-full">
-                                    <h3 className="text-lg font-semibold mb-2">Blog Idea Generator</h3>
-                                    <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} mb-auto`}>
-                                        Never run out of topics with our AI-powered idea generator.
-                                    </p>
-                                    <span className={`text-sm mt-4 ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>Try it →</span>
-                                </CardContent>
-                            </Card>
-                        </Link>
-
-                        <Link href="/tools/headline-analyzer">
-                            <Card className={`h-full border-0 ${isDarkMode ? 'bg-gray-800 hover:bg-gray-750' : 'bg-white hover:bg-gray-100'} transition-all cursor-pointer`}>
-                                <CardContent className="p-6 flex flex-col h-full">
-                                    <h3 className="text-lg font-semibold mb-2">Headline Analyzer</h3>
-                                    <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} mb-auto`}>
-                                        Score and improve your blog post titles for better engagement.
-                                    </p>
-                                    <span className={`text-sm mt-4 ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>Try it →</span>
-                                </CardContent>
-                            </Card>
-                        </Link>
-
-                        <Link href="/tools/seo-optimizer">
-                            <Card className={`h-full border-0 ${isDarkMode ? 'bg-gray-800 hover:bg-gray-750' : 'bg-white hover:bg-gray-100'} transition-all cursor-pointer`}>
-                                <CardContent className="p-6 flex flex-col h-full">
-                                    <h3 className="text-lg font-semibold mb-2">SEO Content Optimizer</h3>
-                                    <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} mb-auto`}>
-                                        Analyze and improve your content for better search rankings.
-                                    </p>
-                                    <span className={`text-sm mt-4 ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>Try it →</span>
-                                </CardContent>
-                            </Card>
-                        </Link>
-
-                        <Link href="/tools/code-snippet-formatter">
-                            <Card className={`h-full border-0 ${isDarkMode ? 'bg-gray-800 hover:bg-gray-750' : 'bg-white hover:bg-gray-100'} transition-all cursor-pointer`}>
-                                <CardContent className="p-6 flex flex-col h-full">
-                                    <h3 className="text-lg font-semibold mb-2">Code Snippet Formatter</h3>
-                                    <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} mb-auto`}>
-                                        Create beautiful, syntax-highlighted code examples for your posts.
-                                    </p>
-                                    <span className={`text-sm mt-4 ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>Try it →</span>
-                                </CardContent>
-                            </Card>
-                        </Link>
-                    </div>
-                </div>
-            </section> */}
         </main>
     );
 };

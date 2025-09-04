@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Heart, Eye, Share2, FileText, Download, Facebook, X, Linkedin } from 'lucide-react';
+import { Heart, Eye, Share2, Facebook, X, Linkedin } from 'lucide-react';
 import { HeartFilledIcon } from '@radix-ui/react-icons';
-import { SiWhatsapp, SiFacebook, SiX, SiLinkedin } from 'react-icons/si';
+import { SiWhatsapp } from 'react-icons/si';
 import { toast } from 'react-hot-toast';
 import {
   DropdownMenu,
@@ -20,7 +20,6 @@ import { cn } from '@/lib/utils';
 import { BlogPostType } from '@/types/blogs-types';
 import { dislikePost, likePost } from '@/action/like';
 import { useTheme } from '@/context/ThemeContext';
-import { generateSimplePdf } from '@/utils/pdf-generator';
 
 interface BlogPostFooterProps {
   post: BlogPostType;
@@ -181,31 +180,6 @@ const BlogPostFooter = ({
     }
   };
 
-  const handleDownloadPdf = async () => {
-    if (isGeneratingPdf) return;
-
-    setIsGeneratingPdf(true);
-    try {
-      const date = post.createdAt ? new Date(post.createdAt).toLocaleDateString() : new Date().toLocaleDateString();
-      await generateSimplePdf({
-        title: post.title,
-        content: post.content,
-        isMarkdown: true,
-        logoUrl: post.thumbnail,
-        filename: `${post.title.replace(/[^a-z0-9]/gi, '-').toLowerCase()}.pdf`,
-        author: post.createdBy || 'ScamAlert',
-        date: date
-      });
-
-      toast.success('PDF downloaded successfully!');
-    } catch (error) {
-      console.error('Error generating PDF:', error);
-      toast.error('Failed to download PDF');
-    } finally {
-      setIsGeneratingPdf(false);
-    }
-  };
-
   return (
     <div
       className={cn(
@@ -263,43 +237,6 @@ const BlogPostFooter = ({
           </Tooltip>
         </TooltipProvider>
 
-        <TooltipProvider>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={handleDownloadPdf}
-                disabled={isGeneratingPdf}
-                className={`
-                  ${isDarkMode
-                    ? "text-gray-300 hover:text-gray-100"
-                    : "text-gray-600 hover:text-gray-800"
-                  }
-                `}
-              >
-                {isGeneratingPdf ? (
-                  <>
-                    <span className="inline-block h-5 w-5 mr-2 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em]"></span>
-                    <span className={`font-medium ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
-                      Generating...
-                    </span>
-                  </>
-                ) : (
-                  <>
-                    <Download className="h-5 w-5 mr-2" />
-                    <span className={`font-medium ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
-                      PDF
-                    </span>
-                  </>
-                )}
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Download as PDF</p>
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>
       </div>
 
       <div className="flex items-center gap-2">
@@ -353,10 +290,6 @@ const BlogPostFooter = ({
             <DropdownMenuContent align="end">
               <DropdownMenuItem onClick={copyToClipboard}>
                 Copy link
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={handleDownloadPdf}>
-                <FileText className="h-4 w-4 mr-2" />
-                Download as PDF
               </DropdownMenuItem>
               {shareOptions.map((option) => (
                 <DropdownMenuItem
