@@ -2,7 +2,6 @@ import webpush from "web-push";
 import { NextRequest, NextResponse } from "next/server";
 import Notification from "@/models/notification.models";
 import { connectDB } from "@/utils/db";
-import { url } from "inspector";
 
 connectDB();
 
