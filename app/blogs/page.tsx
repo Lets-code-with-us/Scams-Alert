@@ -21,7 +21,7 @@ interface PostsData {
     };
 }
 
-const BlogCollectionComponent = ({ techNews = false }: { techNews?: boolean }) => {
+const BlogCollectionComponent = () => {
     const [ref, inView] = useInView();
     const searchParams = useSearchParams();
     const searchTerm = searchParams.get('search') || '';
@@ -58,7 +58,7 @@ const BlogCollectionComponent = ({ techNews = false }: { techNews?: boolean }) =
         },
         statsLoading: true,
         initialized: false,
-        techNews: techNews,
+        techNews: false
     });
     const [searchLoading, setSearchLoading] = useState(false);
     const { isDarkMode } = useTheme();
@@ -144,10 +144,10 @@ const BlogCollectionComponent = ({ techNews = false }: { techNews?: boolean }) =
     );
 }
 
-const BlogCollection = ({ techNews = false }: { techNews?: boolean }) => {
+const BlogCollection = () => {
     return (
         <Suspense fallback={<LoadingEffect />}>
-            <BlogCollectionComponent techNews={techNews} />
+            <BlogCollectionComponent />
         </Suspense>
     )
 

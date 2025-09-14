@@ -36,16 +36,29 @@ async function getAuthorData() {
             email: { $in: (await Blog.distinct('createdBy')) }
         }).lean();
 
-        authors.forEach((author) => {
-            const user = author as UserType;
-            user.createdAt = user.createdAt.toString();
-            user._id = user._id.toString();
-        });
+        const mappedAuthors: UserType[] = authors.map((author: any) => ({
+            email: author.email,
+            name: author.name,
+            image: author.image,
+            bio: author.bio,
+            follower: author.follower,
+            following: author.following,
+            noOfBlogs: author.noOfBlogs,
+            createdAt: author.createdAt?.toString() ?? '',
+            updatedAt: author.updatedAt?.toString() ?? '',
+            theme: author.theme,
+            _id: author._id?.toString() ?? '',
+            website: author.website,
+            socialLinks: author.socialLinks,
+            isEmailVerified: author.isEmailVerified,
+            username: author.username,
+            role: author.role,
+        }));
 
         return {
             success: true,
-            authors: authors as UserType[],
-            totalAuthors: authors.length,
+            authors: mappedAuthors,
+            totalAuthors: mappedAuthors.length,
             message: ''
         };
     } catch (err: any) {
